@@ -1,0 +1,114 @@
+.nav {
+    width: 135rem;
+    position: fixed; 
+    top: 2rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 400;
+
+    @media only screen and (max-width: 1111px){
+        padding: 0 4rem;
+        width: 130rem;
+    }
+    
+    @media only screen and (max-width: 1030px){
+        width: 120rem;
+    }
+
+    @media only screen and (max-width: 963px){
+        width: 110rem;
+    }
+
+    @media only screen and (max-width: 868px){
+        width: 100rem;
+    }
+
+    @media only screen and (max-width: 765px){
+        width: 85rem;
+    }
+
+    @media only screen and (max-width: 674px){
+        width: 80rem;
+    }
+
+    @media only screen and (max-width: 624px){
+        width: 75rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        width: 60rem;
+    }
+
+    @media only screen and (max-width: 434px){
+        width: 55rem;
+    }
+
+    @media only screen and (max-width: 390px){
+        width: 50rem;
+    }
+
+    &__form {
+        width: 55%;
+        position: relative;
+
+        @media only screen and (max-width: 868px){
+            width: 65%;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 70%;
+        }
+
+        &__input {
+            width: 100%;
+            padding: 1.4rem 1.6rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+            font-family: inherit;
+            border-radius: 1.5rem;
+            border: 1px solid transparent;
+            color: $white;
+
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(6.6px);
+            -webkit-backdrop-filter: blur(6.6px);
+
+            transition: all 0.5s;
+
+            &--active-search{
+                border-bottom-left-radius: 0rem;
+                border-bottom-right-radius: 0rem;
+                border-bottom: 1px solid $white;
+                background: rgba(24,100,171, 1);
+            }
+
+            &::placeholder {
+                color: $white;
+                font-weight: 400;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__container__buttons {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1.7rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}

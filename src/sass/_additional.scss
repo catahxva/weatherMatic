@@ -1,0 +1,46 @@
+.additional {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+
+    @media only screen and (max-width: 868px){
+        gap: 6rem;
+    }
+
+    @media only screen and (max-width: 765px){
+        justify-content: space-between;
+        gap: 0rem;
+    }
+
+    @media only screen and (max-width: 624px){
+        justify-content: baseline;
+        gap: 10rem;
+    }
+
+    @media only screen and (max-width: 434px){
+        // display: block;
+    }
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+
+        @media only screen and (max-width: 434px){
+            // justify-content: space-between;
+            flex-direction: column;
+            gap: 0.4rem;
+            align-items: center;
+        }
+    }
+
+    &__spans {
+        color: $white;
+
+        
+        @media only screen and (max-width: 434px){
+            text-align: center;
+        }
+    }
+}

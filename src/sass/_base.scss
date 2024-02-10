@@ -1,0 +1,37 @@
+$primary: #339af0;
+$primary-light: #a5d8ff;
+$primary-dark: #1864ab;
+$white: #FFFFF0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 1380px){
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(227deg, $primary-dark, $primary);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
